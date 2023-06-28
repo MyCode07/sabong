@@ -1,0 +1,117 @@
+.best {
+    article {
+        margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 43px;
+        }
+    }
+    // .best__container
+
+    &__container {
+    }
+
+    // .best__body
+
+    &__body {
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        p {
+            max-width: 731px;
+            width: 100%;
+        }
+    }
+
+    // .best__flex
+
+    &__flex {
+        margin-top: 40px;
+
+        @media (max-width: 768px) {
+            margin-top: 30px;
+        }
+
+        // .best__flex-top
+
+        &-top {
+        }
+
+        // .best__flex-logo
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+
+            img {
+                width: 123px;
+                margin-right: 13px;
+
+                @media (max-width: 768px) {
+                    margin-right: 8px;
+                }
+            }
+
+            h3 {
+                color: #3a3a3a;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 600;
+                letter-spacing: -0.9px;
+            }
+        }
+
+        // .best__flex-info
+
+        &-info {
+            padding-left: 136px;
+
+            @media (max-width: 768px) {
+                padding-left: 0;
+            }
+
+            & > :not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            a {
+                width: 239px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                border: 1px solid #d20023;
+                color: #d20023;
+
+                @media (max-width: 768px) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        // .best__flex-banner
+
+        &-banner {
+            img {
+                border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 20px;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
+                max-width: 730px;
+                width: 100%;
+                font-style: italic;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.odds {
+    // .odds__container
+
+    &__container {
+    }
+
+    // .odds__body
+
+    &__body {
+        ol {
+            max-width: 611px;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            li {
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+                padding: 7px 8px;
+
+                p {
+                    color: #3a3a3a;
+                    font-size: 14px;
+
+                    span {
+                        color: #636363;
+                    }
+                }
+            }
+        }
+    }
+
+    // .odds__top
+
+    &__top {
+        margin-bottom: 35px;
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: 47px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            max-width: 731px;
+            width: 100%;
+        }
+    }
+}

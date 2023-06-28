@@ -1,0 +1,106 @@
+.news {
+    // .news__container
+
+    &__container {
+    }
+
+    // .news__body
+
+    &__body {
+    }
+
+    // .news__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+
+        h2{
+            margin-bottom: 0;
+        }
+
+        a {
+            border: 1px solid #d20023;
+            color: #d20023;
+            width: 139px;
+
+            @media (max-width: 768px) {
+                width: 102px;
+            }
+        }
+    }
+
+    // .news__bottom
+
+    &__bottom {
+        .swiper-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            & > :not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        // .news__bottom-item
+
+        &-item {
+            max-width: 230px;
+            width: 100%;
+
+            // .news__bottom-item-image
+
+            &-image {
+                display: block;
+
+                img {
+                    border-radius: 10px;
+                    height: 163px;
+                    object-fit: cover;
+                }
+            }
+
+            label {
+                display: block;
+                margin: 15px 0;
+                font-size: 14px;
+                letter-spacing: -0.63px;
+            }
+
+            p {
+                color: #3a3a3a;
+                font-weight: 600;
+                letter-spacing: -0.72px;
+                margin-bottom: 15px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #d20023;
+                letter-spacing: -0.72px;
+                font-weight: 500;
+
+                span {
+                    display: block;
+                    border-bottom: 1px solid #d20023;
+                    margin-right: 8px;
+                }
+
+                img {
+                }
+            }
+        }
+    }
+}
+._container {
+}
+._btn {
+    // ._btn-clear
+
+    &-clear {
+    }
+}
