@@ -1,0 +1,125 @@
+.footer {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    background: #fbfbfb;
+
+    @media (max-width: 768px) {
+        padding-top: 40px;
+    }
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__body
+
+    &__body {
+    }
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+
+            & > :not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+
+        nav {
+            margin-right: 30px;
+
+            @media (max-width: 425px) {
+                margin-right: 0;
+            }
+
+            ul {
+                & > :first-child {
+                    color: #3a3a3a;
+                    font-size: 20px;
+                    font-style: italic;
+                    font-weight: 600;
+                    line-height: 111.523%;
+                    letter-spacing: -0.9px;
+                    margin-bottom: 25px;
+                }
+
+                & > :not(:first-child),
+                & > :not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                li {
+                    white-space: nowrap;
+                    letter-spacing: -0.72px;
+                }
+            }
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        display: block;
+        @include adaptive-value("margin-left", 79, 0, 1);
+
+        img {
+            width: 239px;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            justify-content: space-between;
+        }
+
+        p {
+            max-width: 259px;
+            width: 100%;
+            letter-spacing: -0.72px;
+            margin: 0 15px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        // .footer__bottom-18
+
+        &-18 {
+            width: 56px;
+            flex: 0 0 auto;
+        }
+
+        // .footer__bottom-logo
+
+        &-logo {
+            flex: 0 0 auto;
+            display: none;
+            width: 78px;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+    }
+}
+._container {
+}

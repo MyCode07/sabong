@@ -1,0 +1,1 @@
+import { Swiper, Autoplay, Lazy } from "swiper";

@@ -1,0 +1,215 @@
+.header {
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 21px;
+    }
+
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 13px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #8c8c8c;
+
+        @media (max-width: 768px) {
+            padding-bottom: 18px;
+        }
+    }
+
+    // .header__top
+
+    &__top {
+    }
+
+    // .header__left
+
+    &__left {
+        a {
+            display: block;
+
+            img {
+                width: 81px;
+
+                @media (max-width: 768px) {
+                    width: 70px;
+                }
+            }
+        }
+    }
+
+    // .header__center
+
+    &__center {
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > :not(:last-child) {
+                    margin-right: 35px;
+
+                    @media (max-width: 1024px) {
+                        margin-right: 20px;
+                    }
+
+                    @media (max-width: 992px) {
+                        margin-right: 10px;
+                    }
+                }
+
+                li {
+                    a {
+                        font-weight: 500;
+                        letter-spacing: -0.72px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    // .header__right
+
+    &__right {
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        a {
+        }
+    }
+
+    // .header__burger
+
+    &__burger {
+        display: none;
+
+        img,
+        svg {
+            pointer-events: none;
+            width: 47px;
+            height: 47px;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+.sticky-bar {
+    position: sticky;
+    top: 13px;
+
+    // .sticky-bar__container
+
+    &__container {
+    }
+
+    // .sticky-bar__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #ff6464;
+        background: #ffeaea;
+        padding: 18px 16px;
+        position: relative;
+
+        p {
+            display: flex;
+            align-items: center;
+            max-width: 378px;
+
+            span {
+                color: #2d2d2d;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: -0.9px;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 14px;
+                }
+            }
+
+            mark {
+                color: #d20023;
+            }
+
+            a {
+                margin-left: 20px;
+
+                @media (max-width: 768px) {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    // .sticky-bar__cock
+
+    &__cock {
+        position: absolute;
+        width: calc(100% - 32px);
+        top: 50%;
+        left: 16px;
+        transform: translate(0, -50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        pointer-events: none;
+        z-index: 0;
+
+        @media (max-width: 768px) {
+            bottom: -14px;
+            top: unset;
+            transform: translate(0, 0);
+            width: calc(100% + 26px);
+            left: -13px;
+        }
+
+        .cock {
+            width: 57px;
+
+            @media (max-width: 768px) {
+                width: 34px;
+            }
+
+            // .cock-left
+
+            &-left {
+                @media (max-width: 768px) {
+                    transform: rotate(-20deg);
+                }
+            }
+
+            // .cock-right
+
+            &-right {
+                transform: scaleX(-1) rotate(-20deg);
+            }
+        }
+    }
+}
