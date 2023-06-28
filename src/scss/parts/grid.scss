@@ -1,0 +1,64 @@
+.grid {
+    // .grid__container
+
+    &__container {
+    }
+
+    // .grid__body
+
+    &__body {
+    }
+
+    h2 {
+        @media (max-width: 768px) {
+            margin-bottom: 57px;
+        }
+    }
+
+    ol {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            display: block;
+            gap: 0;
+
+            & > :not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        li {
+            width: 100%;
+            max-width: 313px;
+            border-radius: 20px;
+            background: #fbfbfb;
+            padding: 27px;
+            height: auto;
+
+            @media (max-width:768px){
+                max-width: none;
+            }
+
+            img {
+                height: 35px;
+            }
+
+            span {
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                color: #3a3a3a;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 600;
+                letter-spacing: -0.9px;
+                flex: 1 1 auto;
+            }
+
+            p {
+            }
+        }
+    }
+}

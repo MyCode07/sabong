@@ -17,7 +17,7 @@
         justify-content: space-between;
         margin-bottom: 28px;
 
-        h2{
+        h2 {
             margin-bottom: 0;
         }
 
@@ -35,13 +35,28 @@
     // .news__bottom
 
     &__bottom {
-        .swiper-wrapper {
+        @media (max-width: 1030px) {
+            overflow-x: auto;
+            width: 100vw;
+            margin-left: -25px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        // .news__bottom-flex
+
+        &-flex {
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
 
             & > :not(:last-child) {
                 margin-right: 20px;
+            }
+
+            @media (max-width: 1030px) {
+                width: fit-content;
+                padding-inline: 25px;
             }
         }
 
@@ -50,15 +65,28 @@
         &-item {
             max-width: 230px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 1030px) {
+                flex:1 1 auto;
+                min-width: 230px;
+            }
 
             // .news__bottom-item-image
 
             &-image {
                 display: block;
+                position: relative;
+                padding-bottom: 70%;
 
                 img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
                     border-radius: 10px;
-                    height: 163px;
                     object-fit: cover;
                 }
             }
@@ -70,14 +98,15 @@
                 letter-spacing: -0.63px;
             }
 
-            p {
+            h3 {
                 color: #3a3a3a;
                 font-weight: 600;
                 letter-spacing: -0.72px;
                 margin-bottom: 15px;
+                flex: 1 1 auto;
             }
 
-            a {
+            a.link {
                 display: flex;
                 align-items: center;
                 color: #d20023;

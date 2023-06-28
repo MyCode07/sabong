@@ -24,21 +24,21 @@
         }
     }
 
-    // .best__flex
+    // .best__content
 
-    &__flex {
+    &__content {
         margin-top: 40px;
 
         @media (max-width: 768px) {
             margin-top: 30px;
         }
 
-        // .best__flex-top
+        // .best__content-top
 
         &-top {
         }
 
-        // .best__flex-logo
+        // .best__content-logo
 
         &-logo {
             display: flex;
@@ -67,7 +67,7 @@
             }
         }
 
-        // .best__flex-info
+        // .best__content-info
 
         &-info {
             padding-left: 136px;
@@ -93,13 +93,12 @@
             }
         }
 
-        // .best__flex-banner
+        // .best__content-banner
 
         &-banner {
             img {
                 border-radius: 20px;
                 width: 100%;
-                object-fit: cover;
                 margin-bottom: 20px;
 
                 @media (max-width: 768px) {

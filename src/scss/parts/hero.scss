@@ -1,0 +1,132 @@
+.hero {
+    margin-top: 52px;
+    margin-bottom: 85px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+
+    // .hero__container
+
+    &__container {
+    }
+
+    // .hero__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .hero__left
+
+    &__left {
+        max-width: 730px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+        }
+
+        p {
+            max-width: 613px;
+            width: 100%;
+        }
+
+        a {
+            width: 100%;
+            max-width: 367px;
+            margin-top: 40px;
+            background: #d20023;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -0.81px;
+            padding: 20px 0;
+
+            @media (max-width: 768px) {
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+        }
+
+        .best__content-banner {
+            margin-top: 40px;
+
+            @media (max-width: 768px) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    // .hero__right
+
+    &__right {
+        img {
+            width: 100%;
+            max-width: 341px;
+        }
+    }
+
+    // .hero__sidebar
+
+    &__sidebar {
+        margin-left: 20px;
+        max-width: 230px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+            max-width: 100%;
+            margin-top: 30px;
+        }
+
+        nav {
+            ul {
+                & > :not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                li {
+                    color: #3a3a3a;
+                    font-size: 14px;
+                    font-style: italic;
+
+                    a {
+                        color: #d20023;
+                        font-size: 14px;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+
+        .content__tags {
+            gap: 0;
+            margin-top: 0;
+            margin-bottom: 30px;
+
+            span {
+                display: block;
+                font-size: 14px;
+            }
+
+            & > :not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

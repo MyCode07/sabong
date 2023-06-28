@@ -1,5 +1,5 @@
 // import './utils/smoothscrol.js';
-// import './utils/menu.js';
+import './utils/menu.js';
 // import './utils/sliders.js';
 // import './utils/animations.js';
 

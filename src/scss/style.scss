@@ -28,35 +28,35 @@
 // load error 404
 @import "common/404";
 
+// load error menu
+@import "common/menu";
+
 // load accordeon
 // @import "common/accordeon";
 
+// load content
+@import "parts/content";
+
+// load grid
+@import "parts/grid";
+
+
 // load hero
-@import "common/hero";
+@import "parts/hero";
 
 // load casino
-@import "common/casino";
+@import "parts/casino";
 
-// load best
-@import "common/best";
+// load best 
+@import "parts/best";
 
 // load news
-@import "common/news";
+@import "parts/news";
 
-// load popular
-@import "common/popular";
-
-// load odds
-@import "common/odds";
-
-// load odds
-@import "common/payment";
-
-// load comprehensive
-@import "common/comprehensive";
-
-// load advantages
-@import "common/advantages";
+// load table
+@import "parts/table";
+ 
+ 
 
 
 
