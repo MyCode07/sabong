@@ -18,6 +18,9 @@
     // .content__body
 
     &__body {
+        .links{
+            display: flex;
+        }
     }
 
     p {

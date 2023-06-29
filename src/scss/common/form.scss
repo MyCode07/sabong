@@ -11,128 +11,80 @@
 
         &-content {
             display: flex;
+            align-items: flex-end;
             justify-content: space-between;
 
-            p {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            & > :not(:last-child) {
+                margin-right: 20px;
+            }
 
-                img {
+            @media (max-width: 992px) {
+                flex-wrap: wrap;
+
+                & > :not(:last-child) {
+                    margin-bottom: 30px;
+                    margin-right: 0;
                 }
             }
-        }
 
-        &-left,
-        &-right {
-        }
-
-        // .form__rows-left
-
-        &-left {
-        }
-
-        // .form__rows-right
-
-        &-right {
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                margin-right: 0;
+            }
         }
     }
 
     // .form__input
 
     &__input {
-        // form__input-file
+        display: flex;
+        flex-direction: column;
 
-        &-file {
-            border-bottom: unset;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
-            .file-label {
-            }
+        label {
+            margin-bottom: 17px;
+            color: #3a3a3a;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: -0.9px;
+        }
 
-            .file-input {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
+        input {
+            border-radius: 10px;
+            border: 1px solid #cfcfcf;
+            background: #fcfcfc;
 
-                // .file-input__body
-
-                &__body {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-
-                img {
-                }
-
-                input {
-                    display: none;
-                }
-
-                span {
-                    display: block;
-                }
-            }
+            font-weight: 500;
+            letter-spacing: -0.72px;
+            padding: 16px 20px;
         }
     }
 
-    // .form__radio
+    // .form__button
 
-    &__radio {
-        .form__input {
-            div {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
+    &__button {
+        border-radius: 10px;
+        background: #d20023;
+        padding: 16px 0;
+        width: 230px;
 
-                input {
-                    height: 30px;
-                    width: 30px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    opacity: 0;
-                    cursor: pointer;
-                    z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-                    &:checked + .checkmark {
-                        background-image: url("@img/svg/checked.svg");
-                    }
-                }
-
-                label {
-                }
-
-                .checkmark {
-                    position: relative;
-                    height: 30px;
-                    flex: 0 0 30px;
-                    width: 30px;
-                    background-color: unset;
-                    border: 1px solid #fff;
-                    border-radius: 5px;
-                    pointer-events: none;
-
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-            }
+        span {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: -0.72px;
         }
-    }
 
-    .answer {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease 0s;
-
-        &._active {
-            opacity: 1;
-            visibility: visible;
+        @media (max-width: 768px) {
+            width: 100%;
         }
     }
 }

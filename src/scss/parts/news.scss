@@ -69,7 +69,7 @@
             flex-direction: column;
 
             @media (max-width: 1030px) {
-                flex:1 1 auto;
+                flex: 1 1 auto;
                 min-width: 230px;
             }
 
@@ -121,6 +121,20 @@
 
                 img {
                 }
+            }
+        }
+    }
+
+    // .news__all{
+
+    &__all {
+
+        & > :not(:last-child) {
+
+            margin-bottom: 42px;
+            
+            @media (max-width: 768px) {
+                margin-bottom: 32px;
             }
         }
     }
