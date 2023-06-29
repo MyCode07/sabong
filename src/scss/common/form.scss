@@ -77,10 +77,14 @@
         align-items: center;
         justify-content: center;
 
-        span {
-            color: #fff;
-            font-weight: 500;
-            letter-spacing: -0.72px;
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: -0.72px;
+        cursor: pointer;
+
+        input {
+            font: inherit;
+            color: inherit;
         }
 
         @media (max-width: 768px) {
