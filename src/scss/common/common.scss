@@ -141,6 +141,7 @@ mark {
     justify-content: center;
     text-align: center;
     white-space: nowrap;
+    transition: all 0.3s ease 0s;
 
     // ._btn-clear
 
@@ -155,7 +156,41 @@ mark {
 
         @media (any-hover: hover) {
             &:hover {
+                border-color: #a6a6a600;
+                background-color: #d20023;
+                color: #fff;
             }
         }
+    }
+
+    // ._btn-red
+
+    &-red {
+        padding: 14px 20px;
+        background-color: #d20023;
+        border: 1px solid #d20023;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.81px;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #fff;
+                color: #d20023;
+            }
+        }
+    }
+
+    // ._btn-red-color
+
+    &-red-color {
+        border-color: #d20023;
+        color: #d20023;
     }
 }

@@ -33,3 +33,18 @@ document.addEventListener('click', function (e) {
         document.body.classList.remove('_noscroll');
     }
 })
+
+
+const heroSidebar = document.querySelector('.hero__sidebar nav ul');
+const h2Titles = document.querySelectorAll('h2');
+
+if (heroSidebar && h2Titles.length) {
+    h2Titles.forEach(h2 => {
+        const text = h2.textContent.toLocaleLowerCase();
+
+        h2.id = text.replace(/\n\s+/gi, ' ')
+
+        const anchor = `<li><a href="#${text}">${h2.textContent}</a></li>`
+        heroSidebar.insertAdjacentHTML('beforeend', anchor)
+    })
+}

@@ -60,6 +60,14 @@
                     white-space: nowrap;
                     letter-spacing: -0.72px;
                 }
+
+                a {
+                    @media (any-hover: hover) {
+                        &:hover {
+                            color: #d20023;
+                        }
+                    }
+                }
             }
         }
     }

@@ -68,23 +68,12 @@
     // .form__button
 
     &__button {
-        border-radius: 10px;
-        background: #d20023;
-        padding: 16px 0;
-        width: 230px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        color: #fff;
-        font-weight: 500;
-        letter-spacing: -0.72px;
-        cursor: pointer;
+        max-width: 230px;
+        width: 100%;
 
         input {
-            font: inherit;
-            color: inherit;
+            width: 100%;
+            cursor: pointer;
         }
 
         @media (max-width: 768px) {

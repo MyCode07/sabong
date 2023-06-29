@@ -183,19 +183,15 @@
             border-radius: 20px;
             border: 1px solid #cdcdcd;
             background-color: #fff;
+            padding: 10px;
+            width: 100%;
+            max-width: 138px;
 
             @media (max-width: 768px) {
-                width: 100%;
+                max-width: none;
             }
 
             a {
-                margin: 10px;
-                background: #d20023;
-                padding: 13px 46px;
-                color: #fff;
-                font-size: 18px;
-                letter-spacing: -0.81px;
-
                 @media (max-width: 768px) {
                     font-size: 16px;
                 }
