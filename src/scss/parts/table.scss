@@ -18,43 +18,57 @@
 }
 
 table {
-    border-radius: 20px;
-    border: 1px solid #cdcdcd;
-
-    tr {
-        display: grid;
-        grid-template-columns: 1fr 22% 22%;
-
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr 25% 25%;
-        }
-    }
+    border-collapse: unset !important;
+    border-spacing: 0 !important;
+    border: 0 !important;
 
     td {
-        flex: 1 1 auto;
-    }
+        border: 1px solid #cdcdcd !important;
 
-    p {
-        padding: 11px 28px;
+        padding: 11px 28px !important;
         text-align: left;
 
         @media (max-width: 768px) {
             font-size: 14px;
-            padding: 11px 15px;
+            padding: 10px !important;
         }
-    }
-
-    thead tr > :not(:first-child),
-    tbody tr > :not(:first-child) {
-        border-left: 1px solid #cdcdcd;
-    }
-
-    thead {
     }
 
     tbody {
+        & > :not(:last-child) {
+            td {
+                border-bottom: 0 !important;
+            }
+        }
+
         tr {
-            border-top: 1px solid #cdcdcd;
+            & > :not(:last-child) {
+                border-right: 0 !important;
+            }
+        }
+
+        & > :first-child {
+            & > :first-child {
+                border-top-left-radius: 20px;
+            }
+
+            & > :last-child {
+                border-top-right-radius: 20px;
+            }
+        }
+
+        & > :last-child {
+            & > :first-child {
+                border-bottom-left-radius: 20px;
+            }
+
+            & > :last-child {
+                border-bottom-right-radius: 20px;
+            }
         }
     }
+}
+
+.wp-block-table {
+    overflow-x: unset !important;
 }

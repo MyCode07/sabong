@@ -31,6 +31,10 @@ body {
 main {
     flex: 1 1 auto;
     margin-top: 52px;
+
+    & > :last-child{
+        margin-bottom: 0 !important;
+    }
 }
 
 ._container {
@@ -58,9 +62,7 @@ main {
 }
 
 section {
-    &:not(:last-of-type) {
-        margin-bottom: 100px;
-    }
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -120,13 +122,6 @@ svg {
     max-width: 100%;
 }
 
-table,
-thead,
-tbody,
-tr,
-td {
-    display: block;
-}
 
 mark {
     background: none;
