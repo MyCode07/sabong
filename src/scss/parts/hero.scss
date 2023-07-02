@@ -6,6 +6,18 @@
         margin-top: 40px;
     }
 
+    // .hero-start
+
+    &-start {
+        .hero__body {
+            align-items: flex-start;
+
+            @media (max-width: 768px) {
+                align-items: center;
+            }
+        }
+    }
+
     // .hero__container
 
     &__container {
