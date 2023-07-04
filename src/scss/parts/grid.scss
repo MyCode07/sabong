@@ -15,7 +15,9 @@
         }
     }
 
-    ol {
+    // grid__grid
+
+    &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -29,7 +31,7 @@
             }
         }
 
-        li {
+        div {
             width: 100%;
             max-width: 313px;
             border-radius: 20px;
